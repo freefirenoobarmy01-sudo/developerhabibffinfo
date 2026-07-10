@@ -1108,7 +1108,7 @@ HTML_TEMPLATE = '''
             <div class="status-bar">
                 <div><span class="status-dot"></span><span class="status-text">● 24/7 ACTIVE</span> <span style="color:rgba(255,255,255,0.1);margin-left:8px;">|</span> <span style="color:rgba(255,255,255,0.2);"><i class="fas fa-clock"></i> <span id="uptimeDisplay">Loading...</span></span></div>
                 <div class="status-links">
-                    <a href="https://t.me/VDX_01" target="_blank"><i class="fab fa-telegram"></i> Group</a>
+                    <a href="https://t.me/DeveloperHabibX69" target="_blank"><i class="fab fa-telegram"></i> Group</a>
                     <a href="https://t.me/DeveloperHabibX69" target="_blank"><i class="fab fa-telegram"></i> Channel</a>
                 </div>
             </div>
@@ -1122,7 +1122,7 @@ HTML_TEMPLATE = '''
             <!-- SEARCH -->
             <div class="search-container">
                 <div class="input-group">
-                    <input type="text" id="uidInput" placeholder="Enter Free Fire UID..." value="9097982134">
+                    <input type="text" id="uidInput" placeholder="Enter Free Fire UID..." value="9032419789">
                     <button class="search-btn" onclick="searchPlayer()"><i class="fas fa-search"></i> SEARCH</button>
                     <div class="action-btns">
                         <button class="action-btn" onclick="clearInput()"><i class="fas fa-times"></i> CLEAR</button>
@@ -1563,7 +1563,7 @@ HTML_TEMPLATE = '''
         renderRecent();
         
         window.onload = () => {
-            document.getElementById('uidInput').value = '9097982134';
+            document.getElementById('uidInput').value = '9032419789';
             searchPlayer();
         };
     </script>
@@ -1620,6 +1620,6 @@ if __name__ == "__main__":
     print(" Desktop: All info visible without scrolling")
     print(" Mobile: Scroll to see all info")
     print(" VIP Glowing UI with animations")
-    print(" Pre-loaded UID: 9097982134")
+    print(" Pre-loaded UID: 9032419789")
     print("=" * 55)
     app.run(host="0.0.0.0", port=5000, debug=False)
