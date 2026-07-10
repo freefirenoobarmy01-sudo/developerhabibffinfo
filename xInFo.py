@@ -13,7 +13,7 @@ import requests , time
 urllib3.disable_warnings()
 app = Flask(__name__)
 
-cK = hashlib.md5(b"@MT_0G").hexdigest()
+cK = hashlib.md5(b"DeveloperHabib69").hexdigest()
 
 mK = base64.b64decode('WWcmdGMlREV1aDYlWmNeOA==')
 mIV = base64.b64decode('Nm95WkRyMjJFM3ljaGpNJQ==')
@@ -93,20 +93,20 @@ def fetch(uid):
 def ep():
     uid=request.args.get("uid","").strip()
     if not uid or not uid.isdigit():
-        return Response(json.dumps({"ok":False,"error":"invalid uid","Dev":"@MT_0G"},ensure_ascii=False),mimetype='application/json'),400
+        return Response(json.dumps({"ok":False,"error":"invalid uid","Dev":"DeveloperHabib69"},ensure_ascii=False),mimetype='application/json'),400
     ck=(request.path,uid)
     if ck in iCache:
         cached=iCache[ck]
-        if not vCr(cached): return Response(json.dumps({"error":"Hey hey my credit","Dev":"@MT_0G"},ensure_ascii=False),mimetype='application/json'),403
+        if not vCr(cached): return Response(json.dumps({"error":"Hey hey my credit","Dev":"DeveloperHabib69"},ensure_ascii=False),mimetype='application/json'),403
         return Response(json.dumps(cached,ensure_ascii=False),mimetype='application/json')
     try:
         data=fetch(uid)
-        out={**data,"Dev":"@MT_0G"}
-        if not vCr(out): return Response(json.dumps({"error":"heyyy bro my credit","Dev":"@MT_0G"},ensure_ascii=False),mimetype='application/json'),403
+        out={**data,"Dev":"DeveloperHabib69"}
+        if not vCr(out): return Response(json.dumps({"error":"heyyy bro my credit","Dev":"DeveloperHabib69"},ensure_ascii=False),mimetype='application/json'),403
         iCache[ck]=out
         return Response(json.dumps(out,ensure_ascii=False),mimetype='application/json')
     except Exception as e:
         jCache.clear()
-        return Response(json.dumps({"ok":False,"error":str(e),"Dev":"@MT_0G"},ensure_ascii=False),mimetype='applicATion/json'),497
+        return Response(json.dumps({"ok":False,"error":str(e),"Dev":"DeveloperHabib69"},ensure_ascii=False),mimetype='applicATion/json'),497
 
 if __name__=="__main__": app.run(host="0.0.0.0",port=5000,debug=False)
