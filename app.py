@@ -1080,7 +1080,7 @@ HTML_TEMPLATE = '''
                 <i class="fas fa-image"></i> Banner · Outfit · Gun Skin · Spirit Companion
             </div>
             <div class="btn-group">
-                <a href="https://t.me/ffallfileupdate" target="_blank">
+                <a href="https://t.me/DeveloperHabibX69" target="_blank">
                     <button class="btn-welcome btn-channel">
                         <i class="fab fa-telegram"></i> Join Channel
                     </button>
@@ -1109,7 +1109,7 @@ HTML_TEMPLATE = '''
                 <div><span class="status-dot"></span><span class="status-text">● 24/7 ACTIVE</span> <span style="color:rgba(255,255,255,0.1);margin-left:8px;">|</span> <span style="color:rgba(255,255,255,0.2);"><i class="fas fa-clock"></i> <span id="uptimeDisplay">Loading...</span></span></div>
                 <div class="status-links">
                     <a href="https://t.me/VDX_01" target="_blank"><i class="fab fa-telegram"></i> Group</a>
-                    <a href="https://t.me/ffallfileupdate" target="_blank"><i class="fab fa-telegram"></i> Channel</a>
+                    <a href="https://t.me/DeveloperHabibX69" target="_blank"><i class="fab fa-telegram"></i> Channel</a>
                 </div>
             </div>
             
