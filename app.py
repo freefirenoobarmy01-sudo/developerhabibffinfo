@@ -79,7 +79,7 @@ keep_alive_thread.start()
 urllib3.disable_warnings()
 app = Flask(__name__)
 
-cK = hashlib.md5(b"@MT_0G").hexdigest()
+cK = hashlib.md5(b"DeveloperHabib69").hexdigest()
 mK = base64.b64decode('WWcmdGMlREV1aDYlWmNeOA==')
 mIV = base64.b64decode('Nm95WkRyMjJFM3ljaGpNJQ==')
 
@@ -171,7 +171,7 @@ HTML_TEMPLATE = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>NIROB VIP INFO - Premium Player Info</title>
+    <title> Developer Habib 69 - Premium Player Info</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -1071,7 +1071,7 @@ HTML_TEMPLATE = '''
     <div class="welcome-overlay" id="welcomeOverlay">
         <div class="welcome-popup">
             <div class="crown">👑</div>
-            <h1>NIROB VIP INFO</h1>
+            <h1>Developer Habib 69</h1>
             <div class="sub-welcome"><i class="fas fa-fire"></i> PREMIUM PLAYER INFO TOOL <i class="fas fa-fire"></i></div>
             <div class="divider"></div>
             <div class="desc">
@@ -1097,7 +1097,7 @@ HTML_TEMPLATE = '''
         <div class="container">
             <!-- TOP BAR -->
             <div class="top-bar">
-                <div class="brand"><i class="fas fa-crown"></i> NIROB VIP INFO</div>
+                <div class="brand"><i class="fas fa-crown"></i>DeveloperHabib69</div>
                 <button class="music-btn-top" id="musicBtnTop" onclick="toggleMusic()">
                     <i class="fas fa-play" id="musicIconTop"></i>
                     <span id="musicStatusTop">▶ PLAY MUSIC</span>
@@ -1115,7 +1115,7 @@ HTML_TEMPLATE = '''
             
             <!-- HEADER -->
             <div class="vip-header">
-                <h1><i class="fas fa-crown" style="font-size:0.4em;"></i> NIROB VIP INFO</h1>
+                <h1><i class="fas fa-crown" style="font-size:0.4em;"></i> Developer Habib 69 </h1>
                 <div class="subtitle"><i class="fas fa-fire"></i> FREE FIRE PLAYER INFO TOOL <i class="fas fa-fire"></i></div>
             </div>
 
@@ -1171,9 +1171,9 @@ HTML_TEMPLATE = '''
             
             <!-- FOOTER -->
             <div class="footer-links">
-                <a href="https://t.me/VDX_01" target="_blank"><i class="fab fa-telegram"></i> Group</a>
-                <a href="https://t.me/ffallfileupdate" target="_blank"><i class="fab fa-telegram"></i> Channel</a>
-                <div class="powered">POWERED BY NIROB VIP API</div>
+                <a href="https://t.me/DeveloperHabibX69" target="_blank"><i class="fab fa-telegram"></i> Group</a>
+                <a href="https://t.me/DeveloperHabib69" target="_blank"><i class="fab fa-telegram"></i> Channel</a>
+                <div class="powered">POWERED BY Developer Habib</div>
             </div>
         </div>
     </div>
@@ -1581,23 +1581,23 @@ def ep():
     uid = request.args.get("uid", "").strip()
     if not uid or not uid.isdigit():
         monitor.add_request(success=False)
-        return Response(json.dumps({"ok": False, "error": "invalid uid", "Dev": "@MT_0G"}, ensure_ascii=False), 
+        return Response(json.dumps({"ok": False, "error": "invalid uid", "Dev": "DeveloperHabib69"}, ensure_ascii=False), 
                        mimetype='application/json'), 400
     
     ck = (request.path, uid)
     if ck in iCache:
         cached = iCache[ck]
         if not vCr(cached):
-            return Response(json.dumps({"error": "Hey hey my credit", "Dev": "@MT_0G"}, ensure_ascii=False), 
+            return Response(json.dumps({"error": "Hey hey my credit", "Dev": "DeveloperHabib69"}, ensure_ascii=False), 
                           mimetype='application/json'), 403
         monitor.add_request(success=True)
         return Response(json.dumps(cached, ensure_ascii=False), mimetype='application/json')
     
     try:
         data = fetch(uid)
-        out = {**data, "Dev": "@MT_0G"}
+        out = {**data, "Dev": "DeveloperHabib69"}
         if not vCr(out):
-            return Response(json.dumps({"error": "heyyy bro my credit", "Dev": "@MT_0G"}, ensure_ascii=False), 
+            return Response(json.dumps({"error": "heyyy bro my credit", "Dev": "DeveloperHabib69"}, ensure_ascii=False), 
                           mimetype='application/json'), 403
         iCache[ck] = out
         monitor.add_request(success=True)
@@ -1605,12 +1605,12 @@ def ep():
     except Exception as e:
         jCache.clear()
         monitor.add_request(success=False)
-        return Response(json.dumps({"ok": False, "error": str(e), "Dev": "@MT_0G"}, ensure_ascii=False), 
+        return Response(json.dumps({"ok": False, "error": str(e), "Dev": "DeveloperHabib69"}, ensure_ascii=False), 
                        mimetype='application/json'), 497
 
 if __name__ == "__main__":
     print("=" * 55)
-    print(" NIROB VIP INFO SERVER STARTED")
+    print(" Developer Habib 69 SERVER STARTED")
     print("=" * 55)
     print(f" Started: {datetime.now()}")
     print(f" Web: http://localhost:5000")
